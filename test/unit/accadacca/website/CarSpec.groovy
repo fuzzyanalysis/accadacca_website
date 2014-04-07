@@ -1,4 +1,4 @@
-package org.donkeyenough
+package accadacca.website
 
 import grails.test.mixin.TestFor
 import spock.lang.Specification
@@ -6,8 +6,8 @@ import spock.lang.Specification
 /**
  * See the API for {@link grails.test.mixin.domain.DomainClassUnitTestMixin} for usage instructions
  */
-@TestFor(Feedback)
-class FeedbackSpec extends Specification {
+@TestFor(Car)
+class CarSpec extends Specification {
 
     def setup() {
     }
