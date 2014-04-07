@@ -8,7 +8,9 @@
 <body>
 This is the content of my app
   <div class="body">
-  
+  Last Name: <g:fieldValue bean="${car}" field="make"/><br/>
+First Name: <g:fieldValue bean="${car}" field="model"/><br/>
+Age: <g:fieldValue bean="${car}" field="year"/><br/>
   </div>
 </body>
 </html>
