@@ -7,10 +7,21 @@
 </head>
 <body>
 This is the content of my app
-  <div class="body">
-  Last Name: <g:fieldValue bean="${car}" field="make"/><br/>
-First Name: <g:fieldValue bean="${car}" field="model"/><br/>
-Age: <g:fieldValue bean="${car}" field="year"/><br/>
-  </div>
+
+    <table>
+        <tr>
+            <td>Make</td>
+            <td>Model</td>
+            <td>Year</td>
+        </tr>
+        <g:each in="${list}" var="car">
+        <tr>
+            <td><a href="http://www.dicks.com">${car.make}</a></td>
+            <td>${car.model}</td>
+            <td>${car.year}</td>
+        </tr>
+        </g:each>        
+    </table>
+
 </body>
 </html>
