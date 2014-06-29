@@ -16,7 +16,7 @@ This is the content of my app
         </tr>
         <g:each in="${list}" var="car">
         <tr>
-            <td><a href="http://www.dicks.com">${car.make}</a></td>
+            <td><a href="http://www.something.com">${car.make}</a></td>
             <td>${car.model}</td>
             <td>${car.year}</td>
         </tr>

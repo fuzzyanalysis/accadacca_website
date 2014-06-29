@@ -27,16 +27,28 @@ printHtmlPart(1)
 })
 invokeTag('captureHead','sitemesh',7,[:],1)
 printHtmlPart(1)
-createClosureForHtmlPart(3, 1)
-invokeTag('captureBody','sitemesh',13,[:],1)
+createTagBody(1, {->
+printHtmlPart(3)
+for( car in (list) ) {
 printHtmlPart(4)
+expressionOut.print(car.make)
+printHtmlPart(5)
+expressionOut.print(car.model)
+printHtmlPart(6)
+expressionOut.print(car.year)
+printHtmlPart(7)
+}
+printHtmlPart(8)
+})
+invokeTag('captureBody','sitemesh',26,[:],1)
+printHtmlPart(9)
 }
 public static final Map JSP_TAGS = new HashMap()
 protected void init() {
 	this.jspTags = JSP_TAGS
 }
 public static final String CONTENT_TYPE = 'text/html;charset=UTF-8'
-public static final long LAST_MODIFIED = 1396874237000L
+public static final long LAST_MODIFIED = 1398503543000L
 public static final String EXPRESSION_CODEC = 'html'
 public static final String STATIC_CODEC = 'none'
 public static final String OUT_CODEC = 'html'
